@@ -249,7 +249,7 @@
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    margin-left: 15%;
+    margin-left: 20%;
 }
 
 .box4left > h1 {
@@ -294,4 +294,99 @@
 /*-------------------------------- Container5 -------------------------------------------------*/
 .container5 {
     height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
+
+.con5up, .con5down{
+    border: 1px solid black;
+    height: 50vh;
+    margin: 0 10% 0 10%;
+}
+
+/* Con5up */
+.con5upHeaderSection {
+    margin-left: 2%;
+}
+
+.con5upHeaderSection > h1 {
+    margin-top: 15%;
+    font-size: 45px;
+}
+
+.con5upButtonSection {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 3fr;
+}
+
+.con5upButtonSection {
+    margin-top: 5%;
+}
+
+#btn6 {
+    font-size: 8.5px;
+    font-weight: bold;
+    padding: 10px 55px 10px 55px;
+    border: 1px solid var(--con1white);
+    border-radius: 10px;
+    color: var(--con1white);
+    background-color: var(--con1button);
+    transition: .6s;
+    margin-left: 10%;
+}
+
+#btn6:hover {
+    cursor: pointer;
+    color: var(--con1button);
+    background-color: var(--con1white);
+}
+
+#btn7 {
+    font-size: 8.5px;
+    font-weight: bold;
+    padding: 10px 55px 10px 55px;
+    border: 1px solid var(--con1grey);
+    border-radius: 10px;
+    color: var(--con4textcolor);
+    background-color: var(--con1grey);
+    transition: .6s;
+}
+
+#btn7:hover {
+    cursor: pointer;
+    color: var(--con4textcolor);
+    background-color: var(--con1white);
+}
+
+.con5upButtonSection > a {
+    font-weight: bold;
+    text-align: right;
+    text-decoration: none;
+    color: var(--con1button);
+    transition: .6s;
+}
+
+.con5upButtonSection > a:hover {
+    color: var(--con4textcolor);
+}
+
+/* Con5down */
+.con5down {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.con5down > div {
+    border: 1px solid black;
+    font-size: 12px;
+    text-align: left;
+    margin: 10%;
+    padding: 10%;
+    transition: 0.6s;
+}
+
+.con5down > div:hover {
+    cursor: pointer;
+}
+
