@@ -299,7 +299,7 @@
 }
 
 .con5up, .con5down{
-    border: 1px solid black;
+    border: 1px solid white; /*No comment for this code lol*/
     height: 50vh;
     margin: 0 10% 0 10%;
 }
@@ -312,6 +312,7 @@
 .con5upHeaderSection > h1 {
     margin-top: 15%;
     font-size: 45px;
+    color: var(--con4textcolor);
 }
 
 .con5upButtonSection {
@@ -379,14 +380,121 @@
 
 .con5down > div {
     border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--con1white);
     font-size: 12px;
-    text-align: left;
+    font-weight: bold;
+    text-align: center;
     margin: 10%;
     padding: 10%;
+    border-radius: 10px;
     transition: 0.6s;
+    background-image: url(../media/backgroundblur3.png);
+    background-position: center;
+    background-size: cover;
 }
 
 .con5down > div:hover {
     cursor: pointer;
+    box-shadow: 0 3px 10px var(--con4textcolor);
 }
 
+
+
+
+
+/*-------------------------------- Container6 -------------------------------------------------*/
+.container6 {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 4.5fr 5.5fr;
+}
+
+.wrapper6 {
+    border: 1px solid black;
+    background-image: url(../media/background6.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10%;
+}
+
+.wrapper6 > h1 {
+    font-size: 30px;
+    font-weight: lighter;
+    color: var(--con1button);
+    margin-bottom: 10px;
+}
+
+.wrapper6 > h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--con1white);
+    margin-bottom: 7.5px;
+}
+
+.wrapper6 > p {
+    color: var(--con1grey);
+    margin-bottom: 15px;
+}
+
+#btn8 {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 65px 10px 65px;
+    border: none;
+    border-radius: 2.5px;
+    color: var(--con1white);
+    background-color: var(--con1button);
+    transition: .6s;
+}
+#btn8:hover {
+    cursor: pointer;
+    color: var(--con1button);
+    background-color: var(--con1white);
+}
+
+
+
+
+
+/*-------------------------------- Container7 -------------------------------------------------*/
+.wrapper7 {
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.wrapper7 > div {
+    padding: 0 10% 0 10%;
+}
+
+.con7upHeaderSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 25%;
+}
+
+.con7downDAOSection {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.con7downDAOSection  img {
+    border-radius: 5px;
+}
+
+.con7downDAOSection p {
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--con4textcolor);
+    margin: 5px;
+}
+
+.con7downDAOSection h3 {
+    font-size: 15px;
+    color: var(--con3darkgrey);
+}
