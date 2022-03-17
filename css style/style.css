@@ -498,3 +498,62 @@
     font-size: 15px;
     color: var(--con3darkgrey);
 }
+
+
+
+
+
+
+/*-------------------------------- Container8 -------------------------------------------------*/
+.container8 {
+    border: 1px solid black;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left8, .right8 {
+    border: 1px solid black;
+}
+
+.left8 {
+    display: grid;
+    grid-template-rows: 5fr 2fr;
+    padding-left: 20%;
+}
+
+.left8 > div {
+    border: 1px solid rebeccapurple;
+}
+
+.left8text {
+    padding-top: 45%;
+}
+
+.left8text > h1 {
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+
+.left8text > p {
+    color: var(--con4textcolor);
+    padding-bottom: 10px;
+}
+
+#btn9 {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 1% 4.5% 1% 4.5%;
+    border: none;
+    border-radius: 2.5px;
+    color: var(--con1white);
+    background-color: var(--con1button);
+    transition: .6s;
+}
+
+#btn9:hover {
+    cursor: pointer;
+    color: var(--con1button);
+    background-color: var(--con1white);
+    border: 1px solid var(--con1button);
+}
